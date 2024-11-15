@@ -1,17 +1,3 @@
-//Esta función sirve para mostrar seleccionar compañero en caso de que la opción sea grupal
-// function toggleCompaneroField() {
-//     const companeroField = document.getElementById('companeroField');
-//     const isGrupal = document.getElementById('grupal').checked;
-//     companeroField.style.display = isGrupal ? 'block' : 'none';
-// }
-
-// // Mostrar/ocultar el campo de compañero según el tipo de trabajo
-// function toggleCompaneroField() {
-//     const isGrupal = document.getElementById("grupal").checked;
-//     const companeroField = document.getElementById("companeroField");
-//     companeroField.style.display = isGrupal ? "block" : "none";
-// }
-
 function toggleCompaneroField() {
     const tipoTrabajo = document.getElementById("tipoTrabajo").value;
     const companeroField = document.getElementById("companeroField");
