@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear nuevo TP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <form id="crearNuevoTP" method="post">
+        <h1>Crear nuevo TP</h1>
+        <!-- Solicito la materia -->
+        <label for="materia">Materia:</label>
+        <select id="materia" name="materia" required>
+            <option value="" disabled selected>Seleccione una materia</option>
+        </select>
+        <br><br>
+
+
+        <!-- Solicito el nombre del trabajo práctico -->
+        <label for="nombre">Nombre TP:</label>
+        <input type="text" id="nombre" name="nombre" required placeholder="Ingrese nombre del TP">
+        <br><br>
+
+        <!-- Solicito la cantidad de puntos -->
+        <label for="cantidadPuntos">Ingrese la cantidad de puntos:</label>
+        <input class="form-control" type="number" id="cantidadPuntos" name="cantidadPuntos"
+            placeholder="Cantidad de puntos" required>
+        <br><br>
+
+        <!-- Pregunto si el trabajo es individual o grupal -->
+        <label for="tipoTrabajo">Tipo de trabajo:</label>
+        <select id="tipoTrabajo" name="tipoTrabajo" required onchange="toggleCompaneroField()">
+            <option value="" disabled selected>Seleccione el tipo de trabajo</option>
+            <option value="Individual">Individual</option>
+            <option value="Grupal">Grupal</option>
+        </select>
+        <br><br>
+
+
+        <!-- Si el trabajo es grupal muestro añadir amigo sino queda oculto por defecto -->
+        <div id="companeroField" style="display: none;">
+            <label for="companero">Nombre del compañero/a:</label>
+            <input type="text" id="companero" name="companero" placeholder="Ingrese el nombre del compañero/a">
+            <br><br>
+        </div>
+
+        <!-- Botón para enviar el formulario -->
+        <button type="submit">Crear TP</button>
+    </form>
+
+    <!-- Vinculo el Js con el HTML -->
+    <script src="function.js"></script>
+</body>
+
+</html>

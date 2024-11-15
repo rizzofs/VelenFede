@@ -1,0 +1,6 @@
+[
+    { "id": 1, "nombre": "Introducción a la Programación" },
+    { "id": 2, "nombre": "Organización de computadoras" },
+    { "id": 3, "nombre": "Algebra y Lógica computacional" },
+    { "id": 4, "nombre": "Introducción a los sistemas de información" }
+]

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario registro</title>
+</head>
+<body>
+    <h1>
+        Formulario registro
+    </h1>
+    <form id="registro" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" rquired placeholder="Ingrese su nombre">
+        <br><br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" rquired placeholder="Ingrese su apellido">
+        <br><br>
+        <label for="DNI">DNI:</label>
+        <input type="number" id="DNI" name="DNI" rquired placeholder="Ingrese su DNI">
+        <br><br>
+        <label for="usuario">Usuario:</label>
+        <input type="text" id="usuario" name="usuario" rquired placeholder="Ingrese su usuario">
+        <br><br>
+        <!--Falta agregar universidad y carrera, extraer de internet-->
+        <br><br>
+        <label for = "email" class = "form-label">
+            Correo electronico
+        </label>
+        <input type = "email" class = "form-control" id = "email" placeholder="Ingrese su correo">
+        <br><br>
+        <label for="contraseña">Contraseña:</label>
+        <input type="password" id="contraseña" name="contraseña" required minlength="8">
+        <br><br>
+        <label for="confirmarContraseña">Confirmar Contraseña:</label>
+        <input type="password" id="confirmarContraseña" name="confirmarContraseña" required minlength="8">
+        <br><br>
+        <span id="error" class="error">Las contraseñas no coinciden.</span>
+        <br><br>
+        <button type="submit">Registrarse</button>
+    </form>
+</body>
+<script src="/validarContraseña.js"></script>
+</html>
+
+
+<!-- <h1>
+    Formulario registro
+</h1>
+<div class = "mb-3">
+    <label for = "emailEjemplo" class = "form-label">
+        Correo electronico
+    </label>
+    <input type = "email" class = "form-control" id = "emailEjemplo" placeholder="Ingrese su correo">
+    
+</div> -->

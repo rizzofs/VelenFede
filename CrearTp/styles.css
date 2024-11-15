@@ -1,0 +1,101 @@
+/* GENERAL ESTILO DEL CUERPO */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5; /* Fondo gris claro */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* CONTENEDOR DEL FORMULARIO */
+form {
+    background: #ffffff; /* Fondo blanco */
+    padding: 30px;
+    border-radius: 10px; /* Bordes más redondeados */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+/* ESTILO DEL TÍTULO */
+h1 {
+    text-align: center;
+    color: #4CAF50;
+    font-size: 20px; /* Tamaño reducido */
+    margin-bottom: 20px;
+}
+
+/* ETIQUETAS Y CAMPOS DE ENTRADA */
+label {
+    font-weight: 600; /* Negrita para destacar */
+    margin-bottom: 5px;
+    display: block;
+    color: #555; /* Color gris oscuro */
+}
+
+input, select, button {
+    width: 100%;
+    padding: 12px; /* Espaciado interno uniforme */
+    margin: 8px 0 15px 0; /* Espaciado entre campos */
+    border: 1px solid #ddd; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+input:focus, select:focus {
+    border-color: #4CAF50; /* Borde verde al enfocar */
+    outline: none; /* Quita el borde por defecto */
+}
+
+/* ESTILO DEL BOTÓN */
+button {
+    background-color: #4CAF50; /* Fondo verde */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049; /* Color más oscuro al pasar el mouse */
+}
+
+/* CAMPO DE COMPAÑERO/A (CONDICIONAL) */
+#companeroField {
+    margin-top: 10px;
+}
+
+/* RADIO BUTTONS */
+input[type="radio"] {
+    margin-right: 5px; /* Espacio entre el botón y la etiqueta */
+    transform: scale(1.1); /* Agranda ligeramente el botón */
+}
+
+/* CENTRAR RADIO BUTTONS */
+label[for="individual"], label[for="grupal"] {
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: normal;
+}
+
+/* ESTILO RESPONSIVO (PANTALLAS PEQUEÑAS) */
+@media (max-width: 600px) {
+    form {
+        padding: 20px;
+        box-shadow: none;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+}
